@@ -3,6 +3,7 @@ import './App.css';
 import './index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+    faBars,
     faBell,
     faCaretDown,
     faCheck,
@@ -12,33 +13,39 @@ import {
     faUserGroup
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Sidebar from "./Sidebar";
 
 library.add(faCheck);
 
 function App() {
   return (
-
-      <header className="flex items-center justify-between bg-black py-3 px-6 text-white">
+    <>
+      <header className="flex items-center justify-between bg-black py-2 px-6 text-white">
           <div className="flex items-center space-x-4">
               <FontAwesomeIcon icon={faFireFlameCurved} className={'text-red-600 h-6'}/>
               <h1 className="text-xl font-bold pr-2 border-r-2">CRS</h1>
           </div>
-          <div className={'flex items-center space-x-4'}>
-                <div className={"flex items-center space-x-2"}>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
-                        <FontAwesomeIcon icon={faHouse} />
-                    </button>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
-                        <FontAwesomeIcon icon={faUserGroup} />
-                    </button>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
-                        <FontAwesomeIcon icon={faTv} />
-                    </button>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
-                        <FontAwesomeIcon icon={faShop} />
-                    </button>
+          <div className={'flex items-center space-x-4 sm:hidden'}>
+              <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-4 py-2 transition hover:text-red-800'}>
+                  <FontAwesomeIcon icon={faBars} size={"xl"}/>
+              </button>
+          </div>
+          <div className={'hidden sm:flex sm:items-center sm:space-x-4'}>
+              <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                  <FontAwesomeIcon icon={faHouse} />
+              </button>
+              <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                  <FontAwesomeIcon icon={faUserGroup} />
+              </button>
+              <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                  <FontAwesomeIcon icon={faTv} />
+              </button>
+              <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                  <FontAwesomeIcon icon={faShop} />
+              </button>
 
-                </div>
+
+
           </div>
           <div className="flex items-center space-x-4">
               <div className="relative">
@@ -47,7 +54,7 @@ function App() {
                   </div>
                   <input
                       type="text"
-                      className="block w-48 h-10 pl-10 pr-3 rounded-full bg-gray-700 text-sm placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent"
+                      className="block w-28 md:w-48 h-8 md:h-10 pl-10 pr-3 rounded-full bg-gray-700 text-sm placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent"
                       placeholder="Search in CRS..."
                   />
               </div>
@@ -57,6 +64,8 @@ function App() {
               </div>
           </div>
       </header>
+      <Sidebar/>
+    </>
   );
 }
 
