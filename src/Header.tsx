@@ -15,25 +15,25 @@ const Header: React.FC = () => {
         <>
             <header className="flex items-center justify-between bg-black py-2 px-6 text-white">
                 <div className="flex items-center space-x-4">
-                    <FontAwesomeIcon icon={faFireFlameCurved} className={'text-red-600 h-6'}/>
+                    <FontAwesomeIcon icon={faFireFlameCurved} className={'text-blue-700 h-6'}/>
                     <h1 className="text-xl font-bold pr-2 border-r-2">CRS</h1>
                 </div>
                 <div className={'flex items-center space-x-4 sm:hidden'}>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-4 py-2 transition hover:text-red-800'}>
+                    <button className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-4 py-2 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faBars} size={"xl"}/>
                     </button>
                 </div>
                 <div className={'hidden sm:flex sm:items-center sm:space-x-4'}>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                    <button className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faHouse} />
                     </button>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                    <button className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faUserGroup} />
                     </button>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                    <button className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faTv} />
                     </button>
-                    <button className={'hover:bg-gray-800 hover:border-b-red-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-red-800'}>
+                    <button className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faShop} />
                     </button>
 

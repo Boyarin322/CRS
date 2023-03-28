@@ -16,6 +16,7 @@ import {
 import Sidebar from "./Sidebar";
 import Ads from "./Ads";
 import Header from "./Header";
+import MainPageContent from "./MainPageContent";
 
 library.add(faCheck);
 
@@ -25,7 +26,7 @@ function App() {
         <Header/>
         <div className={"grid grid-cols-5 gap-4 w-full"}>
             <Sidebar className={'col-start-1 col-end-2 lg:flex hidden'}/>
-            <h1 className={'font-extrabold col-start-2 col-end-4 items-center'}>Main page</h1>
+            <MainPageContent className={'font-extrabold col-start-2 col-end-5 items-center'}/>
             <Ads className={'col-start-5 col-end-6 md:grid hidden'}/>
         </div>
     </>
