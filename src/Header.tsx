@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                         </div>
                         <input
                             type="text"
-                            className="block w-28 md:w-48 h-8 md:h-10 pl-10 pr-3 rounded-full bg-gray-700 text-sm placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-red-900 focus:border-transparent"
+                            className="block w-28 md:w-48 h-8 md:h-10 pl-10 pr-3 rounded-full bg-gray-700 text-sm placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent"
                             placeholder="Search in CRS..."
                         />
                     </div>
