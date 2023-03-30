@@ -13,23 +13,17 @@ import {
     // faUserGroup
 } from '@fortawesome/free-solid-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Sidebar from "./Sidebar";
-import Ads from "./Ads";
-import Header from "./Header";
-import MainPageContent from "./MainPageContent";
+// import Sidebar from "./modules/Sidebar";
+// import Ads from "./modules/Ads";
+// import Header from "./modules/Header";
+// import MainPageContent from "./modules/MainPageContent";
+import MainPage from "./pages/MainPage";
 
 library.add(faCheck);
 
 function App() {
   return (
-    <>
-        <Header/>
-        <div className={"grid grid-cols-5 gap-4 w-full"}>
-            <Sidebar className={'col-start-1 col-end-2 lg:flex hidden'}/>
-            <MainPageContent className={'font-extrabold col-start-2 col-end-5 items-center'}/>
-            <Ads className={'col-start-5 col-end-6 md:grid hidden'}/>
-        </div>
-    </>
+    <MainPage/>
   );
 }
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import '../index.css';
+import '../App.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faBars, faBell, faCaretDown,
@@ -9,6 +11,7 @@ import {
     faTv,
     faUserGroup
 } from "@fortawesome/free-solid-svg-icons";
+import SearchInput from "../ui/SearchInput";
 
 const Header: React.FC = () => {
     return (
@@ -41,16 +44,7 @@ const Header: React.FC = () => {
 
                 </div>
                 <div className="flex items-center space-x-4">
-                    <div className="relative">
-                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <FontAwesomeIcon icon={faSearch} className="text-gray-500" />
-                        </div>
-                        <input
-                            type="text"
-                            className="block w-28 md:w-48 h-8 md:h-10 pl-10 pr-3 rounded-full bg-gray-700 text-sm placeholder-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent"
-                            placeholder="Search in CRS..."
-                        />
-                    </div>
+                    <SearchInput/>
                     <div className="flex items-center space-x-2 cursor-pointer">
                         <FontAwesomeIcon icon={faBell} className="text-gray-500" />
                         <FontAwesomeIcon icon={faCaretDown} className="text-gray-500" />

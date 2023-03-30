@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faSplotch } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import className from "./className";
+import className from "../interfaces/className";
 // import ad1 from "./ad1.png";
 // import ad2 from "./ad2.png";
 // import ad3 from "./ad3.png";
@@ -13,7 +13,7 @@ const Ads = (props:className) => {
             <div className={`col-span-1 grid grid-rows-2 gap-4 ${className}`}>
                 <div className="row-span-1 bg-gray-800 text-white p-4 rounded-md">
                     <h2 className="text-lg font-medium mb-4">Sponsored</h2>
-                    <a href="#" className="block relative">
+                    <a href="src/index#" className="block relative">
                         <img
                             alt="Advertisement"
                             src="https://via.placeholder.com/300x200"
@@ -27,7 +27,7 @@ const Ads = (props:className) => {
                     </a>
                 </div>
                 <div className="row-span-1 bg-gray-800 p-4 rounded-md">
-                    <a href="#" className="block relative">
+                    <a href="src/index#" className="block relative">
                         <img
                             alt="Advertisement"
                             src="https://via.placeholder.com/300x200"
