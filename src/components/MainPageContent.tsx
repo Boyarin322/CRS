@@ -10,7 +10,7 @@ const MainPageContent = (props: className) => {
     return (
         <>
            <MainPageTopSection className={className}/>
-           {/*<MainPagePostsSection className={className}/>*/}
+           <MainPagePostsSection className={className}/>
         </>
     );
 };

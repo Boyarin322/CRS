@@ -5,8 +5,7 @@ import className from "../interfaces/className";
 const MainPageTopSection = (props: className) => {
     const {className} = props;
     return (
-
-            <div className={` text-white h-1/3 rounded bg-gray-800 ${className}`}>
+            <div className={`text-white h-full rounded bg-gray-800 row-start-1 row-end-2 ${className}`}>
                 <div className={'text-2xl font-medium mt-1 ml-2.5'}>Home</div>
                 <div className={'w-full flex flex-row mt-5'}>
                     <div className={'flex-grow text-center text-2xl hover:bg-gray-700  border-b-4 border-b-gray-700  px-10 py-3 transition'}>
