@@ -6,7 +6,7 @@ import className from "../interfaces/className";
 // import ad2 from "./ad2.png";
 // import ad3 from "./ad3.png";
 
-const Ads = (props:className) => {
+const AdsSection = (props:className) => {
     const { className } = props;
     return (
 
@@ -45,4 +45,4 @@ const Ads = (props:className) => {
     );
 
 }
-export default Ads;
+export default AdsSection;
