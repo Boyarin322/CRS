@@ -17,7 +17,7 @@ import {NavLink} from "react-router-dom";
 const Header: React.FC = () => {
     return (
         <>
-            <header className="flex items-center justify-between bg-black py-2 px-6 text-white">
+            <header className="flex items-center justify-between bg-gray-950 py-2 px-6 text-white">
                 <div className="flex items-center space-x-4">
                     <FontAwesomeIcon icon={faFireFlameCurved} className={'text-blue-700 h-6'}/>
                     <h1 className="text-xl font-bold pr-2 border-r-2">CRS</h1>
