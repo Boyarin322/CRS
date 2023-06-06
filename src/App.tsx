@@ -19,6 +19,7 @@ import Memories from "./pages/Memories";
 import Ads from "./pages/Ads";
 import Other from "./pages/Other";
 import Friends from "./pages/Friends";
+import MessagesMainContent from "./components/MessagesMainContent";
 
 library.add(faCheck);
 
@@ -29,7 +30,8 @@ function App() {
               <Route Component={MainPage} path={'/main'}/>
               <Route Component={Profile} path={'/profile'}/>
               <Route Component={Messages} path={'/messages'}/>
-              <Route Component={Favourites} path={'/favourites'}/>
+              {/*TODO: clear code*/}
+              <Route path="/messages/:dialogId" element={<Messages/>} />
               <Route Component={Groups} path={'/groups'}/>
               <Route Component={Marketplace} path={'/marketplace'}/>
               <Route Component={News} path={'/news'}/>

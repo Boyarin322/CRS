@@ -6,8 +6,7 @@ import {
     faBars, faBell, faCaretDown,
     faFireFlameCurved,
     faHouse,
-    faSearch,
-    faShop, faStore,
+    faStore,
     faTv,
     faUserGroup
 } from "@fortawesome/free-solid-svg-icons";
@@ -28,16 +27,16 @@ const Header: React.FC = () => {
                     </button>
                 </div>
                 <div className={'hidden sm:flex sm:items-center sm:space-x-4'}>
-                    <NavLink to={'/main'} className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
+                    <NavLink to={'/main'} className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-gray-200 rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faHouse} />
                     </NavLink>
-                    <NavLink to={'/friends'}  className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
+                    <NavLink to={'/friends'}  className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-gray-200 rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faUserGroup} />
                     </NavLink>
-                    <NavLink to={'/watch'}  className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
+                    <NavLink to={'/watch'}  className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-gray-200 rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faTv} />
                     </NavLink>
-                    <NavLink  to={'/marketplace'} className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-black rounded px-10 py-3 transition hover:text-blue-800'}>
+                    <NavLink  to={'/marketplace'} className={'hover:bg-gray-800 hover:border-b-blue-800 hover:border-b-4 border-b-4 border-b-gray-200 rounded px-10 py-3 transition hover:text-blue-800'}>
                         <FontAwesomeIcon icon={faStore} />
                     </NavLink>
 
