@@ -20,17 +20,18 @@ import Ads from "./pages/Ads";
 import Other from "./pages/Other";
 import Friends from "./pages/Friends";
 import MessagesMainContent from "./components/MessagesMainContent";
+import stateInterface from "./interfaces/stateInterface";
+import state from "./state";
 
 library.add(faCheck);
 
-function App() {
+function App(props:stateInterface) {
   return (
       <BrowserRouter>
           <Routes>
               <Route Component={MainPage} path={'/main'}/>
               <Route Component={Profile} path={'/profile'}/>
               <Route Component={Messages} path={'/messages'}/>
-              {/*TODO: clear code*/}
               <Route path="/messages/:dialogId" element={<Messages/>} />
               <Route Component={Groups} path={'/groups'}/>
               <Route Component={Marketplace} path={'/marketplace'}/>
