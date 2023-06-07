@@ -20,13 +20,13 @@ import Ads from "./pages/Ads";
 import Other from "./pages/Other";
 import Friends from "./pages/Friends";
 import MessagesMainContent from "./components/MessagesMainContent";
-import stateInterface from "./interfaces/stateInterface";
 import state from "./state";
 
 library.add(faCheck);
 
-function App(props:stateInterface) {
+function App() {
   return (
+      // TODO: fix UI, especially height and adaptability
       <BrowserRouter>
           <Routes>
               <Route Component={MainPage} path={'/main'}/>

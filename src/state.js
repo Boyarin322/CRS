@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "./rerenderEntireTree";
+
 let state = {
     posts: [
         {name: 'Andrew Tate', postText:'Tesla is for geeks'},
@@ -13,5 +15,10 @@ let state = {
         {name: 'Lanovka', messageText: 'You are moron'},
         {name: 'l7891011', messageText: 'You are moron'}
     ]
+}
+export let addPost = (postText, name) => {
+    let newPost = {name: name, postText: postText}
+    state.posts.push(newPost);
+    rerenderEntireTree();
 }
 export default state;
