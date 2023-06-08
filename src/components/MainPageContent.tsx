@@ -4,7 +4,7 @@ import '../index.css';
 import '../App.css';
 import MainPageTopSection from "../modules/MainPageTopSection";
 import MainPagePostsSection from "../modules/MainPagePostsSection";
-import {NavLink} from "react-router-dom";
+
 
 const MainPageContent = (props: className) => {
     const { className } = props;

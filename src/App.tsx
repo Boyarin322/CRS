@@ -9,7 +9,6 @@ import MainPage from "./pages/MainPage";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Profile from "./pages/Profile";
 import Messages from "./pages/Messages";
-import Favourites from "./pages/Favourites";
 import Groups from "./pages/Groups";
 import Marketplace from "./pages/Marketplace";
 import News from "./pages/News";
@@ -19,8 +18,7 @@ import Memories from "./pages/Memories";
 import Ads from "./pages/Ads";
 import Other from "./pages/Other";
 import Friends from "./pages/Friends";
-import MessagesMainContent from "./components/MessagesMainContent";
-import state from "./state";
+
 
 library.add(faCheck);
 

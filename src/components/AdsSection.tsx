@@ -1,10 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight, faSplotch } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import className from "../interfaces/className";
-// import ad1 from "./ad1.png";
-// import ad2 from "./ad2.png";
-// import ad3 from "./ad3.png";
 
 const AdsSection = (props:className) => {
     const { className } = props;

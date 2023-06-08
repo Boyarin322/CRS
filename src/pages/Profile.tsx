@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import MainPageContent from "../components/MainPageContent";
 import AdsSection from "../components/AdsSection";
 
 const Profile = () => {
